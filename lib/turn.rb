@@ -40,12 +40,11 @@ end
 
 def turn(board)
   index=-1
-while position_taken(board, index)
-  puts "Please enter 1-9:"
-  input=gets.strip
-  index=input_to_index(input)
-end
-
-    move(board,index)
+  while position_taken(board, index)
+    puts "Please enter 1-9:"
+    input=gets.strip
+    index=input_to_index(input)
+  end
+  move(board,index)
 
 end
