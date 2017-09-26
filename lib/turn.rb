@@ -39,6 +39,7 @@ def position_taken?(board, number)
 end
 
 def turn(board)
+  index=-1
 until !position_taken?(board,index)
   puts "Please enter 1-9:"
   input=gets.strip
